@@ -1,0 +1,28 @@
+﻿
+.ticketbooth {
+    background: none;
+    display: inline-grid;
+    grid-template-columns: 60px auto;
+    background-color: none;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    padding-top: 30px;
+}
+
+.textfield {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    background-color: none;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+
+.ticketbooth.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.ticketbooth.item4 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}

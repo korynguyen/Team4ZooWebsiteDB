@@ -1,0 +1,22 @@
+﻿.giftshopform {
+    background: none;
+    display: grid;
+    grid-template-columns: 100px 150px;
+    background-color: none;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    padding-top: 30px;
+}
+
+
+.giftshopform item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+}
+
+.giftshopform item2 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+}

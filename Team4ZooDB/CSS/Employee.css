@@ -1,0 +1,34 @@
+﻿/*form {
+    overflow: hidden;
+    height:1000px;
+}
+
+.employee {
+    float: left;
+    width: 150px;
+    padding-right: 24px;
+}*/
+
+/*input {
+    float left;
+    width: 50px;
+}*/
+
+div {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+}
+
+h1 {
+    color: #000000;
+}
+
+label {
+    grid-column: 1 / 2;
+}
+
+input,
+button {
+    grid-column: 2 / 3;
+}

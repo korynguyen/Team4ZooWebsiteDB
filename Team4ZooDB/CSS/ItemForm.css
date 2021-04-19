@@ -1,0 +1,63 @@
+﻿.ItemFormGrid {
+    background: none;
+    display: inline-grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    background-color: none;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    padding-top: 30px;
+}
+
+.ItemFormGrid label, p {
+    color: #000000;
+} 
+
+.ItemFormGrid.item1 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    color: #ff0000;
+}
+.ItemFormGrid.item2 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.ItemFormGrid.item3 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+ItemFormGrid.item4 {
+}
+ItemFormGrid.item5 {
+}
+ItemFormGrid.item6 {
+}
+ItemFormGrid.item7 {
+}
+ItemFormGrid.item8 {
+}
+ItemFormGrid.item9 {
+}
+ItemFormGrid.item10 {
+}
+ItemFormGrid.item11 {
+}
+ItemFormGrid.item12 {
+}
+ItemFormGrid.item13 {
+}
+ItemFormGrid.item14 {
+}
+ItemFormGrid.item15 {
+}
+ItemFormGrid.item16 {
+}
+ItemFormGrid.item17 {
+}
+ItemFormGrid.item18 {
+}
+ItemFormGrid.item19 {
+}
+ItemFormGrid.item20 {
+}

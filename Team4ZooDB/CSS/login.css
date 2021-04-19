@@ -1,0 +1,44 @@
+﻿body {
+    background: #1b1f23;
+    padding: 230px;
+    border-radius: 25px;
+}
+
+div.form {
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    
+}
+
+form {
+    border-radius: 25px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-gap: 16px;
+    align-content: center;
+    background: #ecf0f1;
+    width: 300px;
+    height: 250px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+h1 {
+    color: #000000;
+}
+
+label {
+    grid-column: 1 / 2;
+}
+
+input,
+button {
+    grid-column: 2 / 3;
+}

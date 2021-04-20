@@ -16,6 +16,10 @@
             <label style="margin-left: 10px">Item ID</label>
         </div>
         <div style="margin: 10px">
+            <asp:TextBox ID="amount" runat="server"/>
+            <label style="margin-left: 10px">Amount Purchased</label>
+        </div>
+        <div style="margin: 10px">
             <asp:Button runat="server" Text="Update" OnClick="Update_Click"/>
             <asp:Literal ID="updateMessage" runat ="server" />
         </div>

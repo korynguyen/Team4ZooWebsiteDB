@@ -159,6 +159,13 @@ namespace ItemForm
             }
             if (reportGiftshopID.Text != "")
                 where += "GiftShop_ShopID = " + reportGiftshopID.Text + " AND ";
+              
+            //no checkboxes
+            if (query == "SELECT ")
+            {
+                query = "SELECT * ";
+                numberOfCols = 4;
+            }
             
             //substring removes final ","
             query = query.Substring(0, query.Length - 1) + " FROM itemtype";

@@ -22,7 +22,10 @@ namespace TicketForm
             //Specify and connect to the DB
             using (MySqlConnection sqlConnection = new MySqlConnection(connection))
             {
-                string sql = "INSERT INTO ticket(Price, Date, `Ticket Booth_BoothID`, Member_Email) VALUES("+ price.Text + ", " + date.Text + ", " + boothid.Text + ", '" + email.Text + "');";
+                string datenodashes = date.Text.Substring(0, 4) + date.Text.Substring(5, 2) + date.Text.Substring(8, 2);
+
+            
+                string sql = "INSERT INTO ticket(Price, Date, `Ticket Booth_BoothID`, Member_Email) VALUES("+ price.Text + ", " + datenodashes + ", " + boothid.Text + ", '" + email.Text + "');";
 
 
                 sqlConnection.Open();

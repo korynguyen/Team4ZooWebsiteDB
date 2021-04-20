@@ -28,7 +28,7 @@ namespace ItemUpdate
                     sqlConnection.Open();
 
                     //have to remove dashes for sql statements on dates
-                    string sql = "UPDATE itemtype SET InStock = InStock - 1 WHERE ID = " + updateid.Text + ";";
+                    string sql = "UPDATE itemtype SET InStock = InStock - " + amount.Text + " WHERE ID = " + updateid.Text + ";";
 
                     MySqlCommand sqlCmd = new MySqlCommand(sql, sqlConnection);//UPDATE animal SET DeceasedDate = newDate WHERE ID = animalId;
                     sqlCmd.ExecuteNonQuery(); // execute query

@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 
-namespace Team4ZooDB.Members.FormsSupervisor
+namespace Zoo2
 {
     public partial class GiftShop : System.Web.UI.Page
     {
@@ -57,7 +57,7 @@ namespace Team4ZooDB.Members.FormsSupervisor
                         //adding row to table
                         dynamicTable += "<tr>";
                         dynamicTable += "<td style=\"margin-left:20px\">" + rdr[0].ToString() + "</td>";
-
+                        
                         dynamicTable += "</tr>";
 
                     }

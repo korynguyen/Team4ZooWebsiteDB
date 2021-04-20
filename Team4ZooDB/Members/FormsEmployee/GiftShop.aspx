@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Members/Supervisor.Master" AutoEventWireup="true" CodeBehind="GiftShop.aspx.cs" Inherits="Team4ZooDB.Members.FormsSupervisor.GiftShop" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Members/Employee.Master" AutoEventWireup="true" CodeBehind="GiftShop.aspx.cs" Inherits="Team4ZooDB.Members.FormsEmployee.GiftShop" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="Content" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class ="giftshopform" id ="form1" runat="server">
         <label style="color: #000000" class = "item1">ENTER NEW GIFTSTHOP INTO DATABASE</label>
         <label style="color: #000000">Giftshop ID: </label>

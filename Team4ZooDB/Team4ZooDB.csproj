@@ -127,6 +127,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CSS\Attraction.css" />
     <Content Include="CSS\Employee.css" />
     <Content Include="CSS\GiftShop.css" />
     <Content Include="CSS\ItemForm.css" />
@@ -146,17 +147,22 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Members\General\EmployeeFormV2.aspx" />
+    <Content Include="Members\EmployeeHome.aspx" />
+    <Content Include="Members\FormsEmployee\GiftShop.aspx" />
+    <Content Include="Members\FormsSupervisor\Attraction.aspx" />
     <Content Include="Members\General\Animal Report.csproj" />
+    <Content Include="Members\General\GiftShop.aspx" />
     <Content Include="Members\General\MemberForm.aspx" />
+    <Content Include="Members\General\TicketBooth.aspx" />
     <Content Include="Members\Supervisor.Master" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Members\Employee.Master" />
     <None Include="Properties\PublishProfiles\team4zoodb - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Team4ZooWebsiteDB - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Login.aspx" />
-    <Content Include="Members\FormsSupervisor\GiftShop.aspx" />
     <Content Include="Members\FormsSupervisor\ItemForm.aspx" />
-    <Content Include="Members\FormsSupervisor\TicketBooth.aspx" />
     <Content Include="Members\General\AnimalForm.aspx" />
     <Content Include="Members\General\AnimalReport.aspx" />
     <Content Include="Members\General\Attraction.aspx" />
@@ -232,12 +238,40 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Members\FormsSupervisor\GiftShop.aspx.cs">
+    <Compile Include="Members\Employee.Master.cs">
+      <DependentUpon>Employee.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\Employee.Master.designer.cs">
+      <DependentUpon>Employee.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Members\General\EmployeeFormV2.aspx.cs">
+      <DependentUpon>EmployeeFormV2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\General\EmployeeFormV2.aspx.designer.cs">
+      <DependentUpon>EmployeeFormV2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members\EmployeeHome.aspx.cs">
+      <DependentUpon>EmployeeHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\EmployeeHome.aspx.designer.cs">
+      <DependentUpon>EmployeeHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members\FormsEmployee\GiftShop.aspx.cs">
       <DependentUpon>GiftShop.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Members\FormsSupervisor\GiftShop.aspx.designer.cs">
+    <Compile Include="Members\FormsEmployee\GiftShop.aspx.designer.cs">
       <DependentUpon>GiftShop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members\FormsSupervisor\Attraction.aspx.cs">
+      <DependentUpon>Attraction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\FormsSupervisor\Attraction.aspx.designer.cs">
+      <DependentUpon>Attraction.aspx</DependentUpon>
     </Compile>
     <Compile Include="Members\FormsSupervisor\ItemForm.aspx.cs">
       <DependentUpon>ItemForm.aspx</DependentUpon>
@@ -245,13 +279,6 @@
     </Compile>
     <Compile Include="Members\FormsSupervisor\ItemForm.aspx.designer.cs">
       <DependentUpon>ItemForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Members\FormsSupervisor\TicketBooth.aspx.cs">
-      <DependentUpon>TicketBooth.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Members\FormsSupervisor\TicketBooth.aspx.designer.cs">
-      <DependentUpon>TicketBooth.aspx</DependentUpon>
     </Compile>
     <Compile Include="Members\General\AnimalForm.aspx.cs">
       <DependentUpon>AnimalForm.aspx</DependentUpon>
@@ -281,6 +308,13 @@
     <Compile Include="Members\General\EmployeeReport.aspx.designer.cs">
       <DependentUpon>EmployeeReport.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Members\General\GiftShop.aspx.cs">
+      <DependentUpon>GiftShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\General\GiftShop.aspx.designer.cs">
+      <DependentUpon>GiftShop.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Members\General\ItemForm.aspx.cs">
       <DependentUpon>ItemForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -301,6 +335,13 @@
     </Compile>
     <Compile Include="Members\General\MemberForm.aspx.designer.cs">
       <DependentUpon>MemberForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members\General\TicketBooth.aspx.cs">
+      <DependentUpon>TicketBooth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\General\TicketBooth.aspx.designer.cs">
+      <DependentUpon>TicketBooth.aspx</DependentUpon>
     </Compile>
     <Compile Include="Members\Supervisor.Master.cs">
       <DependentUpon>Supervisor.Master</DependentUpon>
@@ -342,7 +383,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Members\FormsEmployee\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="obj\Release\" />
   </ItemGroup>

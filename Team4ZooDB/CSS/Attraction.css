@@ -1,16 +1,16 @@
-﻿.attractionForm1 {
+﻿.attractionForm {
     display: grid;
     grid-template-columns: 150px 150px;
     padding-top: 20px;
 }
-    /*.attractionForm > * {
+/*.attractionForm > * {
     background-color: #000000;
     border-radius: 25px;
     height: 25px;
 }*/
-    .attractionForm1 label {
+.attractionForm label  {
         color: #000000
-    }
+}
 
 .attraction1 {
     grid-column-start: 1;

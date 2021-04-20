@@ -32,13 +32,7 @@
                         <div class="cell"><asp:HyperLink cssclass="linkContent" ID="HyperLink2" runat="server" NavigateUrl="~/Members/General/TicketBooth.aspx">Ticket Booth</asp:HyperLink></div>
                         <div class="cell"><asp:HyperLink cssclass="linkContent" ID="HyperLink3" runat="server" NavigateUrl="~/Members/General/GiftShop.aspx">Gift Shop</asp:HyperLink></div>
                         <div class="cell"><asp:HyperLink cssclass="linkContent" ID="HyperLink4" runat="server" NavigateUrl="~/Members/General/ItemForm.aspx">Item Form</asp:HyperLink></div>
-                        <div class="cell"><asp:HyperLink cssclass="linkContent" ID="HyperLink5" runat="server" NavigateUrl="~/Members/General/AnimalForm.aspx">Animal Form</asp:HyperLink></div>
-                        <div class="cell"><asp:HyperLink cssclass="linkContent" ID="HyperLink6" runat="server" NavigateUrl="~/Members/General/AnimalReport.aspx">Animal Report</asp:HyperLink></div>
-                        <div class="cell"><asp:HyperLink cssclass="linkContent" ID="HyperLink8" runat="server" NavigateUrl="~/Members/FormsSupervisor/Attraction.aspx">Attraction</asp:HyperLink></div>
-                        <div class="cell"><asp:HyperLink cssclass="linkContent" ID="HyperLink9" runat="server" NavigateUrl="~/Members/General/EmployeeReport.aspx">Employee Report</asp:HyperLink></div>
-                        <div class="cell"><asp:HyperLink cssclass="linkContent" ID="HyperLink10" runat="server" NavigateUrl="~/Members/General/EmployeeFormV2.aspx">Employee Form</asp:HyperLink></div>
                         <div class="cell"><asp:HyperLink cssclass="linkContent" ID="HyperLink12" runat="server" NavigateUrl="~/Members/General/ItemUpdate.aspx">Item Update</asp:HyperLink></div>
-                        <div class="cell"><asp:HyperLink cssclass="linkContent" ID="HyperLink13" runat="server" NavigateUrl="~/Members/General/MemberForm.aspx">Member Form</asp:HyperLink></div>
                     </div>
                 </td>
                 <td class = "content" style= "color:#ffffff">                  

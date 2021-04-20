@@ -38,11 +38,33 @@
         <p>
             <label style="margin-left: 50px">MEMBER DELETION. This is to delete any Member from the database.</label> </p>
         <p>
-            <asp:TextBox ID="Del_MEmail" runat="server" OnTextChanged="Del_MEmail_TextChanged"/>
+            <asp:TextBox ID="Del_MEmail" runat="server"/>
             &nbsp;Member Email</p>
         <p>
             <asp:Button ID="DeleteMember" runat="server" Text="Banish" OnClick="DeleteMember_Click" />
         </p>
+        <p>
+            <label style="margin-left: 50px">MEMBER REPORT. This is to specify a list of Members from the database.</label>
+        </p>
+        <p>
+            <asp:CheckBox ID="includestartdate" runat="server"/>
+            <asp:TextBox ID="MemStartDate" runat="server"  placeholder="yyyy-mm-dd" />
+            <label style="margin-left: 10px">Start Date (YEAR-MO-DA):</label>
+            <label style="margin-left: 10px">Before Date:</label>
+            <asp:CheckBox ID="beforedate" runat="server"/>
+            <label style="margin-left: 10px">After Date:</label>
+            <asp:CheckBox ID="afterdate" runat="server"/>
+        </p>
+        <p>
+            <asp:Button ID="ReportMember" runat="server" OnClick="ReportMember_Click" Text="Submit"/>
+        </p>
+        <p>
+            <asp:Literal ID="MEMreport" runat ="server" />
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>

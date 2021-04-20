@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Team4ZooDB.Members.FormsSupervisor
-{
-
-
-    public partial class GiftShop
-    {
-
+namespace Zoo2 {
+    
+    
+    public partial class GiftShop {
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -21,8 +19,8 @@ namespace Team4ZooDB.Members.FormsSupervisor
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl form1;
-
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
         /// <summary>
         /// GiftshopID control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Team4ZooDB.Members.FormsSupervisor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox GiftshopID;
-
+        
         /// <summary>
         /// SubmitButton control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Team4ZooDB.Members.FormsSupervisor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SubmitButton;
-
+        
         /// <summary>
         /// GetGiftshops control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace Team4ZooDB.Members.FormsSupervisor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button GetGiftshops;
-
+        
         /// <summary>
         /// reportTable control.
         /// </summary>

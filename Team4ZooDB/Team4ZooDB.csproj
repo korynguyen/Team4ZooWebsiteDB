@@ -150,6 +150,8 @@
     <Content Include="Members\General\MemberForm.aspx" />
     <Content Include="Members\Supervisor.Master" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\PublishProfiles\team4zoodb - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Team4ZooWebsiteDB - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="Members\FormsSupervisor\GiftShop.aspx" />
@@ -342,6 +344,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Members\FormsEmployee\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

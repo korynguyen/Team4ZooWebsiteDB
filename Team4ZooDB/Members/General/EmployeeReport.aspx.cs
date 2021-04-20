@@ -168,6 +168,12 @@ namespace EmployeeReport
                 else
                     where += "dob = " + temp + " AND ";
             }
+            //no checkboxes
+            if (query == "SELECT ")
+            {
+                query = "SELECT * ";
+                numberOfCols = 9;
+            }
 
             query = query.Substring(0, query.Length - 1) + " FROM employee";
 

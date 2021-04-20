@@ -214,9 +214,15 @@ namespace Zoo2
                 else
                     where += "DeceasedDate = " + temp + " AND ";
             }
-
+            //no checkboxes
+            if (query == "SELECT ")
+            {
+                query = "SELECT * ";
+                numberOfCols = 11;
+            }
+            
             query = query.Substring(0, query.Length - 1) + " FROM animal";
-
+            
             //adds the where clause if at least one field is filled out
             if (where.Length > 0)
             {

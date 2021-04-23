@@ -15,7 +15,55 @@ namespace Zoo2
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            // This makes the employee Fname, Lname, ID table on page load
+            using (MySqlConnection sqlConnection = new MySqlConnection(connection))
+            {
+                try
+                {
+                    sqlConnection.Open();
 
+                    string sql = "SELECT FName, LName, ID FROM employee;";
+
+                    MySqlCommand sqlCmd = new MySqlCommand(sql, sqlConnection);
+                    MySqlDataReader rdr = sqlCmd.ExecuteReader();
+
+                    //starts table element and adds header row 
+                    string dynamicTable = "<table cellpadding='5' cellspacing='0' style='border: 1px solid #ccc;font-size: 9pt;'><tr>";
+                    //header row
+                    dynamicTable += "<tr>" +
+                        "<th  style=\"margin-left:20px\">First Name</th>" +
+                        "<th  style=\"margin-left:20px\">Last Name</th>" +
+                        "<th  style=\"margin-left:20px\">ID</th>" +
+                        "</tr>";
+
+                    while (rdr.Read())
+                    {
+                        //adding row to table
+                        dynamicTable += "<tr>";
+                        for (int i = 0; i < 3; i++)
+                        {
+                            //adding the data value for the column
+                            System.Diagnostics.Debug.WriteLine(rdr[i].ToString());
+
+                            dynamicTable += "<td style=\"margin-left:20px\">" + rdr[i].ToString() + "</td>";
+                        }
+                        dynamicTable += "</tr>";
+                    }
+
+
+                    dynamicTable += "</table>";
+
+                    sqlConnection.Close();
+
+                    //adding the table to the webpage
+                    reportTable.Text = dynamicTable;
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+            }
         }
         protected void SubmitButton_Click(object sender, EventArgs e)
         {

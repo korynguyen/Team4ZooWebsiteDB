@@ -12,24 +12,24 @@
             <label style="margin-left: 50px">ATTRACTION</label>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="Name" runat="server"/>
             <label style="margin-left: 10px">Attraction Name:</label>
+            <asp:TextBox ID="Name" runat="server"/>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="ManagerID" runat="server" />
             <label style="margin-left: 10px">Manager ID:</label>
+            <asp:TextBox ID="ManagerID" runat="server" />
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="AnimalID" runat="server"/>
             <label style="margin-left: 10px">Animal ID:</label>
+            <asp:TextBox ID="AnimalID" runat="server"/>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="Price" runat="server"  placeholder="yyyy-mm-dd"/>
             <label style="margin-left: 10px">Price:</label>
+            <asp:TextBox ID="Price" runat="server"  placeholder="yyyy-mm-dd"/>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="UpkeepCost" runat="server"  />
             <label style="margin-left: 10px">Upkeep Cost:</label>
+            <asp:TextBox ID="UpkeepCost" runat="server"  />
         </div>
         <div style="margin: 10px"> 
             <asp:Button ID="SubmitButton" runat="server" OnClick="SubmitButton_Click" Text="Submit"/>

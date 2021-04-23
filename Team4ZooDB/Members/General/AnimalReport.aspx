@@ -14,23 +14,23 @@
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includename" runat="server"/>
-            <asp:TextBox ID="Name" runat="server"/>
             <label style="margin-left: 10px">Animal Name: </label>
+            <asp:TextBox ID="Name" runat="server"/>
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includeanimalid" runat="server"/>
-            <asp:TextBox ID="AnimalID" runat="server" />
             <label style="margin-left: 10px">Animal ID:</label>
+            <asp:TextBox ID="AnimalID" runat="server" />
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includebreed" runat="server"/>
-            <asp:TextBox ID="Breed" runat="server"/>
             <label style="margin-left: 10px">Breed:</label>
+            <asp:TextBox ID="Breed" runat="server"/>
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includearrivaldate" runat="server"/>
-            <asp:TextBox ID="ArrivalDate" runat="server"  placeholder="yyyy-mm-dd"/>
             <label style="margin-left: 10px">Arrival Date:</label>
+            <asp:TextBox ID="ArrivalDate" runat="server"  placeholder="yyyy-mm-dd"/>
             <label style="margin-left: 10px">Before Date:</label>
             <asp:CheckBox ID="arrivalb" runat="server"/>
             <label style="margin-left: 10px">After Date:</label>
@@ -38,23 +38,23 @@
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includespecies" runat="server"/>
-            <asp:TextBox ID="Species" runat="server"  />
             <label style="margin-left: 10px">Species:</label>
+            <asp:TextBox ID="Species" runat="server"  />
         </div>
         <div style="margin: 10px">  
             <asp:CheckBox ID="includediet" runat="server"/>
-            <asp:TextBox ID="Diet" runat="server" />
             <label style="margin-left: 10px">Diet:</label>
+            <asp:TextBox ID="Diet" runat="server" />
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includesex" runat="server"/>
-            <asp:TextBox ID="Sex" runat="server" />
             <label style="margin-left: 10px">Sex:</label>
+            <asp:TextBox ID="Sex" runat="server" />
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includedob" runat="server"/>
-            <asp:TextBox ID="DOB" runat="server"  placeholder="yyyy-mm-dd" />
             <label style="margin-left: 10px">DOB:</label>
+            <asp:TextBox ID="DOB" runat="server"  placeholder="yyyy-mm-dd" />
             <label style="margin-left: 10px">Before Date:</label>
             <asp:CheckBox ID="dobb" runat="server"/>
             <label style="margin-left: 10px">After Date:</label>
@@ -62,18 +62,18 @@
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includecarerid" runat="server"/>
-            <asp:TextBox ID="CarerID" runat="server"/>
             <label style="margin-left: 10px">CarerID:</label>
+            <asp:TextBox ID="CarerID" runat="server"/>
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includeattractionname" runat="server"/>
-            <asp:TextBox ID="AttractionName" runat="server"/>
             <label style="margin-left: 10px">Attraction Name:</label>
+            <asp:TextBox ID="AttractionName" runat="server"/>
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includedeathdate" runat="server"/>
-            <asp:TextBox ID="DeathDate" runat="server"  placeholder="yyyy-mm-dd" />
             <label style="margin-left: 10px">Deceased Date:</label>
+            <asp:TextBox ID="DeathDate" runat="server"  placeholder="yyyy-mm-dd" />
             <label style="margin-left: 10px">Before Date:</label>
             <asp:CheckBox ID="deathb" runat="server"/>            
             <label style="margin-left: 10px">After Date:</label>
@@ -86,12 +86,12 @@
             <p>Update Deceased Date Form. This will update the deceased date for an animal</p>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="updateid" runat="server"/>
             <label style="margin-left: 10px">Animal ID</label>
+            <asp:TextBox ID="updateid" runat="server"/>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="updatedeath" placeholder="yyyy-mm-dd" runat="server"/>
             <label style="margin-left: 10px" >Deceased Date:</label>
+            <asp:TextBox ID="updatedeath" placeholder="yyyy-mm-dd" runat="server"/>
         </div>
         <div style="margin: 10px">
             <asp:Button runat="server" Text="Update" OnClick="Update_Click"/>

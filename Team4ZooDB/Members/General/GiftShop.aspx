@@ -12,8 +12,8 @@
             <label style="margin-left: 50px">ENTER NEW GIFTSTHOP INTO DATABASE</label>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="GiftshopID" runat="server"/>
             <label style="margin-left: 10px">Giftshop ID: </label>
+            <asp:TextBox ID="GiftshopID" runat="server"/>
         </div>
         <div style="margin: 10px"> 
             <asp:Button ID="SubmitButton" runat="server" OnClick="SubmitButton_Click" Text="Submit"/>

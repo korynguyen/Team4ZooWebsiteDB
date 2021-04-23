@@ -12,54 +12,55 @@
             <label style="margin-left: 50px">NEW EMPLOYEE FORM</label>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="fname" runat="server"/>
             <label style="margin-left: 10px">First Name: </label>
+            <asp:TextBox ID="fname" runat="server"/>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="minitial" runat="server" />
             <label style="margin-left: 10px">Middle Initial:</label>
+            <asp:TextBox ID="minitial" runat="server" />
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="lname" runat="server"/>
             <label style="margin-left: 10px">Last Name:</label>
+            <asp:TextBox ID="lname" runat="server"/>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="id" runat="server"/>
             <label style="margin-left: 10px">ID:</label>
+            <asp:TextBox ID="id" runat="server"/>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="startdate" runat="server"  placeholder="yyyy-mm-dd"/>
             <label style="margin-left: 10px">Start Date:</label>
+            <asp:TextBox ID="startdate" runat="server"  placeholder="yyyy-mm-dd"/>
         </div>
         <div style="margin: 10px">            
-            <asp:TextBox ID="address" runat="server" />
             <label style="margin-left: 10px">Address:</label>
+            <asp:TextBox ID="address" runat="server" />
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="phone" runat="server" placeholder="###-###-####"/>
             <label style="margin-left: 10px">Phone Number:</label>
+            <asp:TextBox ID="phone" runat="server" placeholder="###-###-####"/>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="sex" runat="server"  placeholder="'M' or 'F'" />
             <label style="margin-left: 10px">Sex:</label>
+            <asp:TextBox ID="sex" runat="server"  placeholder="'M' or 'F'" />
         </div>
         <div style="margin: 10px">
+            <label style="margin-left: 10px">DOB:</label>
             <asp:TextBox ID="dob" runat="server"/>
-            <label style="margin-left: 10px">dob:</label>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="email" runat="server"/>
             <label style="margin-left: 10px">Email:</label>
+            <asp:TextBox ID="email" runat="server"/>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="username" runat="server"/>
             <label style="margin-left: 10px">Username:</label>
+            <asp:TextBox ID="username" runat="server"/>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="password" runat="server"/>
             <label style="margin-left: 10px">Password:</label>
+            <asp:TextBox ID="password" runat="server"/>
         </div>
         <div>
+             <label style="margin-left: 10px">Role:</label>
              <asp:DropDownList ID="role" style="margin: 10px" runat="server">
                 <asp:ListItem Text="Supervisor" Value="Supervisor"></asp:ListItem>
                 <asp:ListItem Text="Employee" Value="Employee"></asp:ListItem>

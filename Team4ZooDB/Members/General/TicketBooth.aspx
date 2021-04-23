@@ -12,8 +12,8 @@
             <label style="margin-left: 10px">TICKET BOOTH FORM:</label>
         </div>
         <div style="margin: 10px">
-            <asp:TextBox ID="BoothID" runat="server"/>
             <label style="margin-left: 10px">BoothID:</label>
+            <asp:TextBox ID="BoothID" runat="server"/>
         </div>
         <div style="margin: 10px">
             <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click"/>

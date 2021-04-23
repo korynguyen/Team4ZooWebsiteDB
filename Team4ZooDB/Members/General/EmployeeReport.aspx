@@ -13,28 +13,28 @@
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includefname" runat="server"/>
-            <asp:TextBox ID="fname" runat="server"/>
             <label style="margin-left: 10px">First Name: </label>
+            <asp:TextBox ID="fname" runat="server"/>
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includeminitial" runat="server"/>
-            <asp:TextBox ID="minitial" runat="server" />
             <label style="margin-left: 10px">Middle Initial:</label>
+            <asp:TextBox ID="minitial" runat="server" />
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includelname" runat="server"/>
-            <asp:TextBox ID="lname" runat="server"/>
             <label style="margin-left: 10px">Last Name:</label>
+            <asp:TextBox ID="lname" runat="server"/>
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includeid" runat="server"/>
-            <asp:TextBox ID="id" runat="server"/>
             <label style="margin-left: 10px">ID:</label>
+            <asp:TextBox ID="id" runat="server"/>
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includestartdate" runat="server"/>
-            <asp:TextBox ID="startdate" runat="server"  placeholder="yyyy-mm-dd" />
             <label style="margin-left: 10px">Start Date:</label>
+            <asp:TextBox ID="startdate" runat="server"  placeholder="yyyy-mm-dd" />
             <label style="margin-left: 10px">Before Date:</label>
             <asp:CheckBox ID="startdateb" runat="server"/>
             <label style="margin-left: 10px">After Date:</label>
@@ -42,23 +42,23 @@
         </div>
         <div style="margin: 10px">  
             <asp:CheckBox ID="includeaddr" runat="server"/>
-            <asp:TextBox ID="addr" runat="server" />
             <label style="margin-left: 10px">Address:</label>
+            <asp:TextBox ID="addr" runat="server" />
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includephone" runat="server"/>
-            <asp:TextBox ID="phone" runat="server" placeholder="###-###-####"/>
             <label style="margin-left: 10px">Phone Number:</label>
+            <asp:TextBox ID="phone" runat="server" placeholder="###-###-####"/>
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includesex" runat="server"/>
-            <asp:TextBox ID="sex" runat="server" placeholder="'M' or 'F'"/>
             <label style="margin-left: 10px">Sex:</label>
+            <asp:TextBox ID="sex" runat="server" placeholder="'M' or 'F'"/>
         </div>
         <div style="margin: 10px">
             <asp:CheckBox ID="includedob" runat="server"/>
-            <asp:TextBox ID="dob" runat="server"/>
             <label style="margin-left: 10px">DOB:</label>
+            <asp:TextBox ID="dob" runat="server"/>
             <label style="margin-left: 10px">Before Date:</label>
             <asp:CheckBox ID="dobb" runat="server"/>
             <label style="margin-left: 10px">After Date:</label>

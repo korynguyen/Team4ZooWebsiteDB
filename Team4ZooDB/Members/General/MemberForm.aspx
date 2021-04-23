@@ -12,17 +12,21 @@
             <label style="margin-left: 50px">MEMBER FORM. This is to enter a new Member into the database.</label>
         </div>
         <p>
+            &nbsp;Member Email
             <asp:TextBox ID="AddMEmail" runat="server"/>
-            &nbsp;Member Email</p>
+        </p>
         <p>
+            &nbsp;Member First Name        
             <asp:TextBox ID="AddMFname" runat="server"/>
-            &nbsp;Member First Name</p>
+        </p>
         <p>
+            &nbsp;Member Middle Initial
             <asp:TextBox ID="AddMMInit" runat="server"/>
-            &nbsp;Member Middle Initial</p>
+        </p>
         <p>
+            &nbsp;Member Last Name
             <asp:TextBox ID="AddMLName" runat="server"/>
-            &nbsp;Member Last Name</p>
+        </p>
         <p>
             <asp:Button ID="CreateMember" runat="server" OnClick="SubmitMember_Click" Text="Submit" OnClientClick="SubmitMember_Click" />
         </p>
@@ -38,8 +42,9 @@
         <p>
             <label style="margin-left: 50px">MEMBER DELETION. This is to delete any Member from the database.</label> </p>
         <p>
+            &nbsp;Member Email
             <asp:TextBox ID="Del_MEmail" runat="server"/>
-            &nbsp;Member Email</p>
+        </p>
         <p>
             <asp:Button ID="DeleteMember" runat="server" Text="Banish" OnClick="DeleteMember_Click" />
         </p>
@@ -47,9 +52,9 @@
             <label style="margin-left: 50px">MEMBER REPORT. This is to specify a list of Members from the database.</label>
         </p>
         <p>
+            <label style="margin-left: 10px">Start Date (YEAR-MO-DA):</label>
             <asp:CheckBox ID="includestartdate" runat="server"/>
             <asp:TextBox ID="MemStartDate" runat="server"  placeholder="yyyy-mm-dd" />
-            <label style="margin-left: 10px">Start Date (YEAR-MO-DA):</label>
             <label style="margin-left: 10px">Before Date:</label>
             <asp:CheckBox ID="beforedate" runat="server"/>
             <label style="margin-left: 10px">After Date:</label>

@@ -31,6 +31,15 @@ namespace ItemUpdate {
         protected global::System.Web.UI.WebControls.TextBox updateid;
         
         /// <summary>
+        /// amount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox amount;
+        
+        /// <summary>
         /// updateMessage control.
         /// </summary>
         /// <remarks>

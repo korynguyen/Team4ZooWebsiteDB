@@ -54,6 +54,12 @@
         <div style="margin: 10px"> 
             <asp:Button ID="SubmitButton" runat="server" OnClick="SubmitButton_Click" Text="Submit"/>
         </div>
+        <div>
+            <p>List of employees and their IDs:</p>
+        </div>
+        <div>
+            <asp:Literal ID="reportTable" runat ="server" />
+        </div>
     </form>
 </body>
 </html>

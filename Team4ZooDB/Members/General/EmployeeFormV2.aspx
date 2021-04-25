@@ -52,10 +52,6 @@
             <asp:TextBox ID="email" runat="server"/>
         </div>
         <div style="margin: 10px">
-            <label style="margin-left: 10px">Username:</label>
-            <asp:TextBox ID="username" runat="server"/>
-        </div>
-        <div style="margin: 10px">
             <label style="margin-left: 10px">Password:</label>
             <asp:TextBox ID="password" runat="server"/>
         </div>

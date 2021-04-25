@@ -36,7 +36,6 @@ namespace EmployeeFormV2
                 sqlCmd.Parameters.AddWithValue("s_Sex", sex.Text);
                 sqlCmd.Parameters.AddWithValue("s_DOB", dob.Text);
                 sqlCmd.Parameters.AddWithValue("s_Email", email.Text);
-                sqlCmd.Parameters.AddWithValue("s_Username", username.Text);
                 sqlCmd.Parameters.AddWithValue("s_Password", password.Text);
                 sqlCmd.Parameters.AddWithValue("s_Role", role.SelectedValue);
 

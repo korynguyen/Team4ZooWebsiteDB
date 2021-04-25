@@ -6,12 +6,13 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
 using System.Web.Security;
+using System.IO;
 namespace Team4ZooDB
 {
     public partial class Login : System.Web.UI.Page
     {
         string connection = "Server=team4zoodb.mysql.database.azure.com; Port=3306; Database=zoo; Uid=Team4@team4zoodb; Pwd=4thTeamRocks; SslMode=Preferred; Convert Zero Datetime=True";
-        object obj;
+        //string connection = File.ReadAllText(@".\Members\General\connection.txt");
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.Abandon();
@@ -22,7 +23,7 @@ namespace Team4ZooDB
             using (MySqlConnection sqlConnection = new MySqlConnection(connection))
             {
                 sqlConnection.Open();
-                MySqlCommand sqlCmd = new MySqlCommand("SELECT * FROM zoo.employee WHERE (Username = @User OR Email = @User) AND Password = MD5(@password)", sqlConnection); /*AND authentication_string = PASSWORD(@password)*/
+                MySqlCommand sqlCmd = new MySqlCommand("SELECT * FROM zoo.employee WHERE Email = @User AND Password = MD5(@password)", sqlConnection); /*AND authentication_string = PASSWORD(@password)*/
                 sqlCmd.CommandType = System.Data.CommandType.Text;
                 string ID = String.Format("{0}", Request.Form["Username"]);
                 string passValue = String.Format("{0}", Request.Form["Password"]);
@@ -36,7 +37,7 @@ namespace Team4ZooDB
                 {
                     while (row.Read())
                     {
-                        username = row["Username"].ToString();
+                        username = row["Email"].ToString();
                         role = row["Role"].ToString();
 
                         //Session["User"] = GetUserObject(ID, passValue);

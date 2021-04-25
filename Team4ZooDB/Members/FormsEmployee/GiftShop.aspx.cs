@@ -9,7 +9,7 @@ namespace Team4ZooDB.Members.FormsEmployee
 {
     public partial class GiftShop : System.Web.UI.Page
     {
-        string connection = "Server=team4zoodb.mysql.database.azure.com; Port=3306; Database=zoo; Uid=Team4@team4zoodb; Pwd=4thTeamRocks; SslMode=Preferred;";
+        string connection = System.IO.File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("connection.txt"));
 
         protected void Page_Load(object sender, EventArgs e)
         {

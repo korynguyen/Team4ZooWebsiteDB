@@ -53,7 +53,7 @@
         </div>
         <div style="margin: 10px">
             <label style="margin-left: 10px">Password:</label>
-            <asp:TextBox ID="password" runat="server"/>
+            <asp:TextBox ID="password" runat="server" TextMode="Password"/>
         </div>
         <div>
              <label style="margin-left: 10px">Role:</label>

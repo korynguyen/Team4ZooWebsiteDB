@@ -11,8 +11,8 @@ namespace Team4ZooDB
 {
     public partial class Login : System.Web.UI.Page
     {
-        string connection = "Server=team4zoodb.mysql.database.azure.com; Port=3306; Database=zoo; Uid=Team4@team4zoodb; Pwd=4thTeamRocks; SslMode=Preferred; Convert Zero Datetime=True";
-        //string connection = File.ReadAllText(@".\Members\General\connection.txt");
+        string connection = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Members/General/connection.txt"));
+
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.Abandon();

@@ -14,7 +14,7 @@ namespace Zoo2
 {
     public partial class AnimalReport : System.Web.UI.Page
     {
-        string connection = "Server=team4zoodb.mysql.database.azure.com; Port=3306; Database=zoo; Uid=Team4@team4zoodb; Pwd=4thTeamRocks; SslMode=Preferred; Convert Zero Datetime=True";
+        string connection = System.IO.File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("connection.txt"));
 
         protected void Page_Load(object sender, EventArgs e)
         {

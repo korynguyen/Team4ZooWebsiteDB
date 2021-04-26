@@ -27,7 +27,9 @@ Website link: https://team4zoowebsitedb.azurewebsites.net/
 
 Database Dump link: https://drive.google.com/drive/folders/1kyuK3uZgPRWIFJWaGrmg7w3kNzDhYwen
 
-Zoo DB Triggers
+
+
+Zoo DB Triggers:
 
 Most triggers add to the 'notifications' table which is meant to be reviewed by a host to send out emails. Unsent messages from the notifications table are marked by the 'Sent' value (0 -> No, 1 -> Yes)
 

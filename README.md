@@ -20,7 +20,7 @@ John@gmail.com
 johnpass
 
 If trying to use a locally hosted database, you must change Team4ZooDB/Members/General/connection.txt and change the fields.
-Our online hosted database subscription ends on April 5, 2021 so after this date the database would have to be hosted locally.
+Our online hosted database subscription has ended but we dont know when the service will actually be down.
 
 Website link: https://team4zoowebsitedb.azurewebsites.net/
 

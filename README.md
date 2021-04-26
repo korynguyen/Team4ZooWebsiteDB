@@ -20,6 +20,7 @@ John@gmail.com
 johnpass
 
 <b>IMPORTANT:</b> If trying to use a different database either hosted locally or with another service, you must edit Team4ZooDB/Members/General/connection.txt and change the fields.
+
 Our online hosted database/website subscription ended on April 25, 2021 but we dont know when the service will actually be down.
 
 Website link: https://team4zoowebsitedb.azurewebsites.net/
@@ -29,6 +30,7 @@ Database Dump link: https://drive.google.com/drive/folders/1kyuK3uZgPRWIFJWaGrmg
 Zoo DB Triggers
 
 Most triggers add to the 'notifications' table which is meant to be reviewed by a host to send out emails. Unsent messages from the notifications table are marked by the 'Sent' value (0 -> No, 1 -> Yes)
+
 Notifications table contains a unique identification numbers (int), if it was sent (boolean), the name (string), type of email (string), and the timestamp of when it was last updated and or added (timestamp). The only other time a item in the notifications table should be updated is when it is sent.
 
 1. itemtype AFTER UPDATE - Create notification of low stock notice if updated item is 10 or under in supply

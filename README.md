@@ -23,3 +23,18 @@ If trying to use a locally hosted database, you must change Team4ZooDB/Members/G
 Our online hosted database subscription ends on April 5, 2021 so after this date the database would have to be hosted locally.
 
 Website link: https://team4zoowebsitedb.azurewebsites.net/
+
+Database Dump link: https://drive.google.com/drive/folders/1kyuK3uZgPRWIFJWaGrmg7w3kNzDhYwen
+
+Zoo DB Triggers
+
+Most triggers add to the 'notifications' table which is meant to be reviewed by a host to send out emails. Unsent messages from the notifications table are marked by the 'Sent' value (0 -> No, 1 -> Yes)
+Notifications table contains a unique identification numbers (int), if it was sent (boolean), the name (string), type of email (string), and the timestamp of when it was last updated and or added (timestamp). The only other time a item in the notifications table should be updated is when it is sent.
+
+1. itemtype AFTER UPDATE - Create notification of low stock notice if updated item is 10 or under in supply
+
+2. ticket AFTER INSERT - Create notification to email member when ticket is purchased
+
+3. employee BEFORE UPDATE - Stops a user from updating an employee's ID and tosses an error
+
+4. employee AFTER UPDATE - Create notification of role change when an employee's role is updated

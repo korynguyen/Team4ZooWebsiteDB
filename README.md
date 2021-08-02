@@ -42,3 +42,6 @@ Notifications table contains a unique identification numbers (int), if it was se
 3. employee BEFORE UPDATE - Stops a user from updating an employee's ID and tosses an error
 
 4. employee AFTER UPDATE - Create notification of role change when an employee's role is updated
+
+Conceptual Schema:
+![alt text](https://github.com/korynguyen/Team4ZooWebsiteDB/blob/main/Conceptual_Schema.jpg?raw=true)

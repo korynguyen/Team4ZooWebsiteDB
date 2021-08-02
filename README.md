@@ -44,4 +44,4 @@ Notifications table contains a unique identification numbers (int), if it was se
 4. employee AFTER UPDATE - Create notification of role change when an employee's role is updated
 
 Conceptual Schema:
-![alt text](https://github.com/korynguyen/Team4ZooWebsiteDB/blob/main/Conceptual_Schema.jpg?raw=true)
+![alt text](https://github.com/korynguyen/Team4ZooWebsiteDB/blob/b91d20be117fd0ee0340419270a019b2a52e20a4/Conceptual_Schema.jpg?raw=true)
